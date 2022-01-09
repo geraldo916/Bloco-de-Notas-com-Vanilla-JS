@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Poppins-regular';
+    src: url('Poppins/Poppins-Regular.ttf');
+}
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    height: 100vh;
+    background-color: #e6e6e6;
+    position: relative;
+}
+.header{
+    background-color: #ffb422;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    align-items: center;
+    font-family: 'Poppins';
+}
+a{
+    text-decoration: none;
+}
+#mais{
+    font-size: 28px;
+    font-weight: 100;
+    position: fixed;
+    bottom: 16px;
+    right: 20px;
+    background-color: #ffb422;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Poppins';
+    border: none;
+    cursor: pointer;
+}
+#notas{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-gap: 30px;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+.nota{
+    min-width: 260px;
+    min-height: 100px;
+    margin-top: 10px;
+}
+.cabecalho-note{
+    background-color: #f6b969;
+    width: 100%;
+    height: 10%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+.titleHeader{
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    font-size: 14px;
+    color: #fff;
+}
+.input input,textarea{
+    width: 100%;
+    border:none;
+    padding: 10px;
+}
+.main{
+    background-color: white;
+    height: 100%;
+    margin-bottom: 16px;
+    min-width: 150px;
+    min-height: 100px;
+    padding: 10px;
+    color: #2b2a33;
+    letter-spacing: 1.4px;
+}
+.hidden{
+    display: none;
+}
+.botoes{
+    position: absolute;
+    right: 0;
+    padding: 10px;
+}
+.botoes button{
+    background: none;
+    border: none;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media(max-width:376px){
+    #notas{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        margin-bottom: 10px;
+        margin: 10px;
+    }
+}
